@@ -1,13 +1,16 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
     [SerializeField] private float _lifeTime = 2f;
-    [SerializeField] private ScoreCounter _scoreCounter;
-    
+    //[SerializeField] private ScoreCounter _scoreCounter;
+
     private Coroutine _life;
 
+    public event Action EnemyDefeat;
+    
     private void OnEnable()
     {
         _life = StartCoroutine(DeactivateObject());
@@ -27,8 +30,9 @@ public class PlayerBullet : MonoBehaviour
 
         if (collider.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            _scoreCounter.Add();
-            Debug.Log("Скрипт добавил очко");
+            //_scoreCounter.Add();
+            EnemyDefeat?.Invoke();
+            Debug.Log("Скрипт вызвал ивент побеждённого врага");
         }
     }
 
