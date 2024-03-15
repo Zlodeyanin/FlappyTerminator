@@ -1,4 +1,1 @@
-public class PlayerBulletMover : BulletMover
-{
-
-}
+public class PlayerBulletMover : BulletMover { }

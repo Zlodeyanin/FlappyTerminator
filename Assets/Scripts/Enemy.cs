@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 {
     private List<EnemyBullet> _bullets;
 
+    public event Action Defeat;
+
     private void Start()
     {
         _bullets = new List<EnemyBullet>();
@@ -18,6 +20,7 @@ public class Enemy : MonoBehaviour
         {
             ReturnBullets();
             gameObject.SetActive(false);
+            Defeat?.Invoke();
         }
     }
 
@@ -27,9 +30,8 @@ public class Enemy : MonoBehaviour
 
         if (_bullets.Count != 0)
         {
-            foreach (var bullet in _bullets)
+            foreach (EnemyBullet bullet in _bullets)
             {
-                //bullet.gameObject.SetActive(false);
                 bullet.transform.position = gameObject.transform.position;
             }
         }

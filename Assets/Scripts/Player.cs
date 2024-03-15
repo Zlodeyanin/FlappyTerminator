@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
 
     private void ProcessCollision()
     {
-        Debug.Log("GAMEOVER");
         GameOver?.Invoke();
     }
 

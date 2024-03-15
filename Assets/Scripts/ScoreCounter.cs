@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ScoreCounter : MonoBehaviour
 {
+    [SerializeField] private ObjectPool<Enemy> _enemyPool;
+    
     private int _score;
     
     public event Action<int> ScoreChanged;
@@ -11,12 +13,16 @@ public class ScoreCounter : MonoBehaviour
     {
         _score++;
         ScoreChanged?.Invoke(_score);
-        Debug.Log(name + "ScoreCounter добавил очков");
     }
     
     public void Reset()
     {
         _score = 0;
         ScoreChanged?.Invoke(_score);
+    }
+
+    public void OnEnemyCreate(Enemy obj)
+    {
+        obj.Defeat += Add;
     }
 }

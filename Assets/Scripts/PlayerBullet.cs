@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     [SerializeField] private float _lifeTime = 2f;
-    //[SerializeField] private ScoreCounter _scoreCounter;
 
     private Coroutine _life;
 
@@ -30,9 +29,7 @@ public class PlayerBullet : MonoBehaviour
 
         if (collider.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            //_scoreCounter.Add();
             EnemyDefeat?.Invoke();
-            Debug.Log("Скрипт вызвал ивент побеждённого врага");
         }
     }
 

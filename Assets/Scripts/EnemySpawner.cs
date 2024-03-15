@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform _container;
     [SerializeField] private Enemy _enemy;
     [SerializeField] private int _count;
+    [SerializeField] private ScoreCounter _scoreCounter;
 
     private ObjectPool<Enemy> _pool;
     private Coroutine _spawnEnemies;
@@ -17,6 +18,7 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         _pool = new ObjectPool<Enemy>(_enemy, _count, _container);
+        _pool.Created += _scoreCounter.OnEnemyCreate;
         _spawnEnemies = StartCoroutine(GenerateEnemies());
     }
 

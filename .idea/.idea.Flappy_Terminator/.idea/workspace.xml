@@ -22,7 +22,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTracker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollisionHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBulletMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
@@ -32,23 +31,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyShooter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBulletMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBulletMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Window.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StartScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndGameScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectRemover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShooter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShooter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBulletMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShooter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectRemover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBulletMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShooter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Window.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +102,8 @@
       <workItem from="1708840017313" duration="6640000" />
       <workItem from="1708939720216" duration="5669000" />
       <workItem from="1709021171490" duration="9698000" />
-      <workItem from="1710316128573" duration="8271000" />
+      <workItem from="1710316128573" duration="8539000" />
+      <workItem from="1710521020561" duration="2860000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class EnemyShooter : MonoBehaviour
@@ -17,7 +15,6 @@ public class EnemyShooter : MonoBehaviour
     {
         _pool = new ObjectPool<EnemyBullet>(_enemyBullet, 1, gameObject.transform);
         _enemyBullets = new List<EnemyBullet>();
-        //_shoot = StartCoroutine(Shoot());
     }
 
     private void OnEnable()
@@ -51,12 +48,5 @@ public class EnemyShooter : MonoBehaviour
             
             yield return delay;
         }
-    }
-
-    private void ReturnBulletEnemy()
-    {
-        EnemyBullet bullet = _enemyBullets.FirstOrDefault();
-        bullet.transform.position = gameObject.transform.position;
-        _pool.PutElement(bullet);
     }
 }

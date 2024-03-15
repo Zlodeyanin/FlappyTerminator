@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class BulletMover : MonoBehaviour
@@ -19,7 +18,7 @@ public abstract class BulletMover : MonoBehaviour
             StopCoroutine(_moveCoroutine);
     }
 
-    public virtual IEnumerator Move()
+    private IEnumerator Move()
     {
         while (enabled)
         {

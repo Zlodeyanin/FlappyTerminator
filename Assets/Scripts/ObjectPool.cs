@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -8,6 +9,7 @@ public class ObjectPool<T> where T: MonoBehaviour
     public Transform Container { get; private set; }
 
     private List<T> _pool;
+    public event Action<T> Created;
 
     public ObjectPool(T prefab, int count)
     {
@@ -74,6 +76,7 @@ public class ObjectPool<T> where T: MonoBehaviour
     private T CreateObject(bool isActiveByDefault = false)
     {
         T createdObject = Object.Instantiate(Prefab, Container, true);
+        Created?.Invoke(createdObject);
         createdObject.gameObject.SetActive(isActiveByDefault);
         _pool.Add(createdObject);
         return createdObject;

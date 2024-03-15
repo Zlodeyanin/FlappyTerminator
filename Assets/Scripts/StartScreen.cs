@@ -10,7 +10,7 @@ public class StartScreen : Window
         ActionButton.interactable = false;
     }
 
-    public override void Open()
+    public virtual void Open()
     {
         WindowGroup.alpha = 1f;
         ActionButton.interactable = true;
